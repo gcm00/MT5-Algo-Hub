@@ -47,7 +47,7 @@ def find_adf(data):
     asset1 = data.iloc[:, 0]
     asset2 = data.iloc[:, 1]
 
-    print("Computing ADF according to:")
+    print("Testing Cointegration according to:")
 
     print("--------- Spread Difference ---------")
     spread_diff = asset1 - asset2
