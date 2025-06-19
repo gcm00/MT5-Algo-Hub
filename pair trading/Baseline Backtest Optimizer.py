@@ -1,16 +1,18 @@
 """
-Pairs Trading Backtest & Parameter Optimization (Educational Use Only)
+Pairs Trading Backtest & Parameter Optimization
 
-This script implements a basic pairs trading strategy using historical data from MetaTrader 5.
-It focuses on two financial indices:
-- USTEC (NASDAQ-100)
-- US500 (S&P 500)
-It computes the spread between them, and applies a z-score based trading algorithm to simulate entry and exit positions.
-The strategy is then evaluated over a grid of parameters (entry threshold, exit threshold, stop loss).
-The best-performing configurations are displayed based on final return.
+The strategy operates by computing the spread between two assets, then applying a trading algorithm based on a rolling z-score of that spread. 
+Specifically:
+- A rolling mean and standard deviation are calculated over a moving window of fixed length (e.g., 50 periods).
+- Trading signals are triggered when the z-score exceeds a configurable entry threshold (positive or negative).
+- Positions are closed when the spread mean-reverts beyond an exit threshold or hits a defined stop loss.
+- The strategy is backtested over a fixed number of past bars (e.g., 5000), which you can customize.
+An exhaustive grid search is then performed to evaluate various combinations of parameters
 
-The primary purpose of this code is educational — to explore quantitative trading logic, data manipulation,
-and optimization routines using Python. I can’t guarantee any of this makes sense — it’s more instinct than science!
+The goal is to identify promising parameter sets under a simple rule-based logic, serving as a baseline framework for more advanced strategy development.
+
+The primary purpose of this code is educational — to explore quantitative trading logic, data manipulation, and optimization routines using Python. 
+I can’t guarantee any of this makes sense — it’s more instinct than science!
 
 ⚠️ Disclaimer:
 This project is NOT financial advice and is NOT intended for live trading. It is provided purely
