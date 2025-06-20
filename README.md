@@ -1,13 +1,7 @@
-# MT5 Trading Tools 🚀
+# MT5 Algo Tools 🔧
 
-Personal collection of MetaTrader 5 (MT5) Python scripts for market analysis and automation.  
-*("If my experiments can help anyone, why keep them private?")*
+Just a few personal tools and scripts for working with MetaTrader 5 and Python.
 
-### 📋 Prerequisites
-1. **Download MetaTrader 5** from your broker's website or [official MT5 page](https://www.metatrader5.com/)
-2. **Python 3.8+** installed
+Nothing too fancy. 
 
-### ⚡ Quick Start
-```bash
-# Install required libraries
-pip install MetaTrader5 pandas numpy
+Might be useful. Might not.
