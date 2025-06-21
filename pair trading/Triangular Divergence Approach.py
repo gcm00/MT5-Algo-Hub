@@ -16,7 +16,6 @@ import MetaTrader5 as mt5
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-
 from openpyxl.styles.builtins import neutral
 from plotly.express.trendline_functions import rolling
 from pygments.lexers.sql import sqlite_prompt_re
