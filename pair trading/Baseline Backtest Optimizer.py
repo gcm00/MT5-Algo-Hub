@@ -12,7 +12,7 @@ An exhaustive grid search is then performed to evaluate various combinations of 
 The goal is to identify promising parameter sets under a simple rule-based logic, serving as a baseline framework for more advanced strategy development.
 
 The primary purpose of this code is educational — to explore quantitative trading logic, data manipulation, and optimization routines using Python. 
-I can’t guarantee any of this makes sense — it’s more instinct than science!
+I can’t guarantee any of this makes sense, this is more instinct than science!
 
 ⚠️ Disclaimer:
 This project is NOT financial advice and is NOT intended for live trading. It is provided purely
